@@ -35,7 +35,7 @@ def take_command():
 
 if __name__ == '__main__':
 
-    speak("Amigo assistance activated ")
+    speak("Voice Assistant assistance activated ")
     speak("How can i help you")
     while True:
         query = take_command().lower()
@@ -46,7 +46,7 @@ if __name__ == '__main__':
             speak("According to wikipedia")
             speak(results)
         elif 'are you' in query:
-            speak("I am amigo developed by Jaspreet Singh")
+            speak("I am Voice Assistant developed by Tejaswi")
         elif 'open youtube' in query:
             speak("opening youtube")
             webbrowser.open("youtube.com")
@@ -64,7 +64,7 @@ if __name__ == '__main__':
             webbrowser.open("spotify.com")
         elif 'open whatsapp' in query:
             speak("opening whatsapp")
-            loc = "C:\\Users\\jaspr\\AppData\\Local\\WhatsApp\\WhatsApp.exe"
+            loc = "C:\\Users\\venk\\AppData\\Local\\WhatsApp\\WhatsApp.exe"
             os.startfile(loc)
         elif 'play music' in query:
             speak("opening music")
